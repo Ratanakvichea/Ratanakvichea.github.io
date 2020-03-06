@@ -9,10 +9,6 @@ if ( username == "vichea" && password == "123456")
 alert ("Login successfully");
 return false;
 }
-else{
-  setTimeout(() => window.open('http://google.com'), 3000);
-  return true;
-}
 else
 {
 attempt --;

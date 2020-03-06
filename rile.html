@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Rile convert to Dollar </title>
+	<link rel="stylesheet" type="text/css" href="rile.css">
+</head>
+<body bgcolor="green">
+	<h1>RIEL TO DOLLAR</h1>
+<p>
+	<label>RIEL:</label>
+	<input id="inputRiel" type="number" placeholder="KHMER RIEL"
+     oninput="RIELTODOLLAR(this.value)" onchange="RIELTODOLLAR(this.value)">
+</p>
+<p>DOLLAR: <span id="outputDOLLAR"></span></p>
+
+<script>
+function RIELTODOLLAR(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputDOLLAR").innerHTML=(valNum*1)/4150;
+}
+</script>
+
+</body> </html>
+
